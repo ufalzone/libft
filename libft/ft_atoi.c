@@ -6,31 +6,31 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:26:56 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/02 20:08:08 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/12 20:56:30 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
-    int resultat;
-    int signe;
+	int	resultat;
+	int	signe;
 
-    resultat = 0;
-    signe = 1;
-    while (*str == ' ' || (*str >= 9 && *str <= 13))
-        str++;
-    if (*str == '+' || *str == '-')
-        {
-            if (*str == '-')
-                signe = -1;
-        str++;
-        }
-    while (*str >= '0' && *str <= '9')
-    {
-        resultat = resultat * 10 + (*str - '0');
-        str++;
-    }
-    return (resultat * signe);
+	resultat = 0;
+	signe = 1;
+	while (*str == ' ' || (*str >= 9 && *str <= 13))
+		str++;
+	if (*str == '+' || *str == '-')
+	{
+		if (*str == '-')
+			signe = -1;
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+	{
+		resultat = resultat * 10 + (*str - '0');
+		str++;
+	}
+	return (resultat * signe);
 }
 
 // // test_ft_atoi.c
@@ -70,6 +70,5 @@ int ft_atoi(char *str)
 
 // int main() {
 //     test_ft_atoi();
-//     return 0;
+//     return (0);
 // }
-

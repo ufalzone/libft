@@ -12,16 +12,16 @@
 
 #include <stdio.h>
 
-int ft_strcmp(const char * s1, const char * s2, size_t size)
+int	ft_strcmp(const char *s1, const char *s2, size_t size)
 {
-    size_t i;
-    
-    i = 0;
-    while (i < size && s1[i] && s2[i])
-    {
-        if (s1[i] != s2[i])
-            return (s1[i] - s2[i]);
-        i++;
-    }
-    return (s1[i] - s2[i]);
+	size_t	i;
+
+	i = 0;
+	while (i < size && s1[i] && s2[i])
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }

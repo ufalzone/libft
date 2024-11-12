@@ -10,20 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strncpy(char *dest, const char *src, int size)
+char	*ft_strncpy(char *dest, const char *src, int size)
 {
-    int i;
-    
-    i = 0;
-    while (src[i] && i < size)
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    while (i < size)
-    {
-        dest[i] = '\0';
-        i++;
-    }
-    return (dest);
+	int	i;
+
+	i = 0;
+	while (src[i] && i < size)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	while (i < size)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }

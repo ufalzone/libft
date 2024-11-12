@@ -6,29 +6,30 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 21:14:37 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/06 21:41:33 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/12 21:01:52 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void *ft_calloc(size_t elementCount, size_t elementSize)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-    void *ptr;
-    size_t sizeTotal;
-    size_t compteur;
+	void	*ptr;
+	size_t	size_total;
+	size_t	compteur;
 
-    sizeTotal = elementCount * elementSize;
-    if (elementCount && elementSize && (sizeTotal / elementCount) != elementSize)
-        return (NULL);
-    ptr = malloc(sizeTotal);
-    if (!ptr)
-        return NULL;
-    compteur = 0;
-    while (compteur < sizeTotal)
-    {
-        ((unsigned char *) ptr)[compteur] = 0;
-        compteur++;
-    }
-    return (ptr);
+	size_total = nmemb * size;
+	if (nmemb && size && (size_total
+			/ nmemb) != size)
+		return (NULL);
+	ptr = malloc(size_total);
+	if (!ptr)
+		return (NULL);
+	compteur = 0;
+	while (compteur < size_total)
+	{
+		((unsigned char *)ptr)[compteur] = 0;
+		compteur++;
+	}
+	return (ptr);
 }

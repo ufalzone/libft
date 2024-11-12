@@ -6,12 +6,11 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 20:57:44 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/07 15:44:23 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/12 21:03:12 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

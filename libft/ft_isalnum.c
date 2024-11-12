@@ -6,13 +6,14 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:18:55 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/10/22 18:22:48 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/12 20:56:42 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(char c)
+int	ft_isalnum(char c)
 {
-    if ((c >= '0' && c <= '9' ) || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-        return (1);
-    return (0);
+	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A'
+			&& c <= 'Z'))
+		return (1);
+	return (0);
 }
