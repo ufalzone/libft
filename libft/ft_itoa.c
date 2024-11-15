@@ -6,13 +6,13 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 19:33:15 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/12 20:57:01 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/15 01:13:38 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	size_itoa(int n)
+static int	size_itoa(int n)
 {
 	int	compteur;
 

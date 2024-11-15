@@ -6,11 +6,13 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:26:56 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/12 20:56:30 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/13 16:50:08 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
 	int	resultat;
 	int	signe;

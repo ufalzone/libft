@@ -6,11 +6,11 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 01:00:03 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/12 20:57:44 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:08:44 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memset(void *ptr, int value, size_t num)
 {

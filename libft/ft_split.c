@@ -6,20 +6,20 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 19:26:10 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/12 19:33:06 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/15 01:13:59 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-int	is_charset(char s, char c)
+static int	is_charset(char s, char c)
 {
 	if (c == s)
 		return (1);
 	return (0);
 }
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	i;
 	int	compteur;
@@ -38,7 +38,7 @@ int	count_words(char const *s, char c)
 	return (compteur);
 }
 
-int	ft_wordlen(char const *s, char c)
+static int	ft_wordlen(char const *s, char c)
 {
 	int	i;
 
@@ -48,7 +48,7 @@ int	ft_wordlen(char const *s, char c)
 	return (i);
 }
 
-char	*ft_worddup(char const *s, char c)
+static char	*ft_worddup(char const *s, char c)
 {
 	int		i;
 	char	*tab;

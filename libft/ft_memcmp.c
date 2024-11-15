@@ -6,11 +6,11 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 23:53:54 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/12 20:57:27 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:08:36 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *pointer1, const void *pointer2, size_t size)
 {

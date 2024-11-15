@@ -6,9 +6,11 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 20:17:10 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/12 21:04:34 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/13 14:09:18 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

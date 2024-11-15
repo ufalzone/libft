@@ -6,11 +6,13 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:23:08 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/12 20:56:48 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/13 15:09:53 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+#include "libft.h"
+
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

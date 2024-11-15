@@ -6,7 +6,7 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:48:16 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/12 14:37:01 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/13 15:03:55 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,26 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		size_total;
 	char	*resultat;
+	int		i;
+	int		j;
 
 	size_total = (ft_strlen(s1) + ft_strlen(s2));
 	resultat = malloc(sizeof(char) * (size_total + 1));
 	if (!resultat)
 		return (NULL);
-	ft_strcpy(resultat, s1);
-	ft_strcat(resultat, s2);
+	i = 0;
+	while (s1[i])
+	{
+		resultat[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (s2[j])
+	{
+		resultat[i + j] = s2[j];
+		j++;
+	}
+	resultat[i + j] = '\0';
 	return (resultat);
 }
 

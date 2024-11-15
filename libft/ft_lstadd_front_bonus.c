@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 22:33:09 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/10/22 22:42:08 by ufalzone         ###   ########.fr       */
+/*   Created: 2024/11/14 17:22:08 by ufalzone          #+#    #+#             */
+/*   Updated: 2024/11/15 00:16:41 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, const char *src, int size)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (src[i] && i < size)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	while (i < size)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
+void ft_lstadd_front(t_list **lst, t_list *new)
+{
+
 }
