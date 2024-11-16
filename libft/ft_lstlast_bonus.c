@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 23:13:31 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/16 23:32:01 by ufalzone         ###   ########.fr       */
+/*   Created: 2024/11/15 03:24:28 by ufalzone          #+#    #+#             */
+/*   Updated: 2024/11/15 17:00:42 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+t_list	*ft_lstlast(t_list *lst)
 {
-	int		i;
-	char	chr;
-
-	i = 0;
-	chr = (char)c;
-	while (s[i])
-	{
-		if (s[i] == chr)
-			return ((char *)&s[i]);
-		i++;
-	}
-	if (chr == '\0')
-		return ((char *)&s[i]);
-	return (NULL);
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }

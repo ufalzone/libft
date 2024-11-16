@@ -6,7 +6,7 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 16:36:16 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/14 17:21:48 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:01:43 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *new_node = malloc(sizeof(t_list));
+	t_list	*new_node;
+
+	new_node = malloc(sizeof(t_list));
 	if (!new_node)
 		return (NULL);
 	new_node->content = content;
