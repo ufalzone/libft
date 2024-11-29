@@ -6,11 +6,11 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 03:24:28 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/15 17:00:42 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:31:29 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 t_list	*ft_lstlast(t_list *lst)
 {

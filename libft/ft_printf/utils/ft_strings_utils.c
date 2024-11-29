@@ -1,25 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_strings_utils.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/14 16:36:16 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/29 19:31:24 by ufalzone         ###   ########.fr       */
+/*   Created: 2024/11/18 13:19:50 by ufalzone          #+#    #+#             */
+/*   Updated: 2024/11/21 13:51:48 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/ft_printf.h"
 
-t_list	*ft_lstnew(void *content)
+int	ft_printf_putchar(char c)
 {
-	t_list*new_node;
+	write(1, &c, 1);
+	return (1);
+}
 
-	new_node = malloc(sizeof(t_list));
-	if (!new_node)
-		return (NULL);
-	new_node->content = content;
-	new_node->next = NULL;
-	return (new_node);
+size_t	ft_printf_strlen(const char *str)
+{
+	size_t	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
+
+int	ft_printf_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	if (!str)
+		return (ft_printf_putstr("(null)"));
+	while (str[i])
+	{
+		ft_printf_putchar(str[i]);
+		i++;
+	}
+	return (i);
 }

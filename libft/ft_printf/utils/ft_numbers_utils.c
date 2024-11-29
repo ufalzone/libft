@@ -1,28 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_numbers_utils.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/15 03:23:39 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/29 19:31:37 by ufalzone         ###   ########.fr       */
+/*   Created: 2024/11/18 13:17:09 by ufalzone          #+#    #+#             */
+/*   Updated: 2024/11/21 13:51:47 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/ft_printf.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *nw)
+int	ft_printf_putnbr(long n)
 {
-	t_list	*temp;
+	int	i;
 
-	temp = *lst;
-	if (*lst == NULL)
+	i = 0;
+	if (n < 0)
 	{
-		(*lst) = nw;
-		return ;
+		ft_printf_putchar('-');
+		n = -n;
+		i++;
 	}
-	while (temp->next)
-		temp = temp->next;
-	temp->next = nw;
+	if (n >= 10)
+		i += ft_printf_putnbr(n / 10);
+	ft_printf_putchar(n % 10 + '0');
+	i++;
+	return (i);
+}
+
+int	ft_printf_putnbr_unsigned(unsigned int n)
+{
+	int	i;
+
+	i = 0;
+	if (n >= 10)
+		i += ft_printf_putnbr_unsigned(n / 10);
+	ft_printf_putchar(n % 10 + '0');
+	i++;
+	return (i);
 }

@@ -6,12 +6,11 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:01:38 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/29 18:54:10 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:27:37 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
-#include "libft.h"
+#include "includes/get_next_line.h"
 
 int	check_buffer(char *s)
 {
@@ -56,7 +55,7 @@ char	*extract_line(char *s1)
 	i = 0;
 	len_line = ft_lenbuffer(s1);
 	if (len_line == -1)
-		len_line = ft_strlen(s1);
+		len_line = ft_strlen_gnl(s1);
 	line = malloc(sizeof(char) * (len_line + 1));
 	if (!line)
 		return (NULL);
@@ -82,7 +81,7 @@ char	*update_stock(char *s1)
 	j = ft_lenbuffer(s1);
 	if (j == -1)
 		return (NULL);
-	len_stock = ft_strlen(s1) - j;
+	len_stock = ft_strlen_gnl(s1) - j;
 	resultat = malloc(sizeof(char) * (len_stock + 1));
 	if (!resultat)
 		return (NULL);

@@ -6,11 +6,11 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:39:28 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/17 00:24:28 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:31:27 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
