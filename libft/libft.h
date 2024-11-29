@@ -6,7 +6,7 @@
 /*   By: ufalzone <ufalzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 21:31:37 by ufalzone          #+#    #+#             */
-/*   Updated: 2024/11/16 17:45:27 by ufalzone         ###   ########.fr       */
+/*   Updated: 2024/11/29 18:57:21 by ufalzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strncmp(const char *s1, const char *s2, size_t size);
 char				*ft_strnstr(const char *haystack, const char *needle,
 						int size);
+char				*get_next_line(int fd);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s1, char const *set);
